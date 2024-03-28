@@ -26,7 +26,7 @@
     4. Improve text rendering
   */
 body {
-   display: flex;
+    display: flex;
    justify-content: center;
    align-items: center;
    height: 100vh;
@@ -83,31 +83,38 @@ h6 {
 }
 
 article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    justify-items: center;
     text-align: center;
     
-    max-width: 700px;
-    gap: 2rem;
+    width:400px;
+    gap: 1rem;
     padding: 1.5rem 1.8rem;
     border-radius: 1rem;
     background-color: var(--dark-grey);
 }
 
 article > picture {
-    display: flex;
     width: 40%;
 }
 
 article > picture > img {
+    left: auto;
     border-radius: 100%;
 }
 
 @media (min-width: 500px) {
     article {
-        max-width: auto;
+        width: 500px;
+        padding: 2rem 4rem;
+    }
+
+    article > picture {
+        margin-top: 2rem;
+    }
+
+    .cards-links {
+        width: 90%
     }
 }
 
@@ -116,7 +123,7 @@ h1 {
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--green);
 }
 
@@ -127,6 +134,7 @@ h3 {
 
 .cards-links {
     width: 100%;
+
 }
 
 ul {
